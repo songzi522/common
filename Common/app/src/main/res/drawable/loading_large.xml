@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-rotate
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/loading_large_01"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    />
+
+    <!--pivotX : 设置动画相对于控件的 x 坐标的位置-->
+    <!--pivotY:设置动画相对于控件的 y 坐标的位置-->
+

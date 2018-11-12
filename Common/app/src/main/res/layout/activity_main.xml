@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gs.common.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn23"
+            style="@style/BtnCommon"
+            android:text="23、TestActivity"
+            />
+
+        <Button
+            android:id="@+id/btn33"
+            style="@style/BtnCommon"
+            android:text="33、PictureTest4Activity"
+            />
+
+        <Button
+            android:id="@+id/btn32"
+            style="@style/BtnCommon"
+            android:text="32、PictureTest3Activity"
+            />
+
+        <Button
+            android:id="@+id/btn31"
+            style="@style/BtnCommon"
+            android:text="31、PictureTest2Activity"
+            />
+
+        <Button
+            android:id="@+id/btn16"
+            style="@style/BtnCommon"
+            android:text="16、CountTimerActivity(计时器)"
+            />
+
+        <Button
+            android:id="@+id/btn2"
+            style="@style/BtnCommon"
+            android:text="2、DialogActivity"
+            />
+
+        <Button
+            android:id="@+id/btn3"
+            style="@style/BtnCommon"
+            android:text="3、AnimationActivity（动画）"
+            />
+
+        <Button
+            android:id="@+id/btn24"
+            style="@style/BtnCommon"
+            android:text="24、LifeCycleActivity(生命周期)"
+            />
+
+        <Button
+            android:id="@+id/btn25"
+            style="@style/BtnCommon"
+            android:text="25、ServiceTestActivity(service服务)"
+            />
+
+        <Button
+            android:id="@+id/btn26"
+            style="@style/BtnCommon"
+            android:text="26、FragmentTestActivity"
+            />
+
+        <Button
+            android:id="@+id/btn27"
+            style="@style/BtnCommon"
+            android:text="27、DispatchTouchEventActivity"
+            />
+
+        <Button
+            android:id="@+id/btn28"
+            style="@style/BtnCommon"
+            android:text="28、InterfaceTestActivity"
+            />
+
+        <Button
+            android:id="@+id/btn29"
+            style="@style/BtnCommon"
+            android:text="29、BroadCastActivity(BroadCastReceiver广播接收者)"
+            />
+
+        <Button
+            android:id="@+id/btn30"
+            style="@style/BtnCommon"
+            android:text="30、HorizontalCenterActivity(水平居中透明线)"
+            />
+
+
+
+        <Button
+            android:id="@+id/btn12"
+            style="@style/BtnCommon"
+            android:text="12、ListViewActivity"
+            />
+
+        <Button
+            android:id="@+id/btn13"
+            style="@style/BtnCommon"
+            android:text="13、PercentFrameLayoutAty"
+            />
+
+        <Button
+            android:id="@+id/btn14"
+            style="@style/BtnCommon"
+            android:text="14、RvActivity"
+            />
+
+        <Button
+            android:id="@+id/btn15"
+            style="@style/BtnCommon"
+            android:text="15、PostDataActivity（传递数据）"
+            />
+
+
+
+        <Button
+            android:id="@+id/btn17"
+            style="@style/BtnCommon"
+            android:text="17、BaseShowActivity"
+            />
+
+        <Button
+            android:id="@+id/btn18"
+            style="@style/BtnCommon"
+            android:text="18、ShowLoadDialogActivity"
+            />
+
+        <Button
+            android:id="@+id/btn0"
+            style="@style/BtnCommon"
+            android:text="0、UniqueIdActivity"
+            />
+
+        <Button
+            android:id="@+id/btn1"
+            style="@style/BtnCommon"
+            android:text="1、ThreadActivity"
+            />
+
+
+
+
+
+        <Button
+            android:id="@+id/btn4"
+            style="@style/BtnCommon"
+            android:text="4、QRCodeActivity"
+            />
+
+        <Button
+            android:id="@+id/btn5"
+            style="@style/BtnCommon"
+            android:text="5、GlideActivity"
+            />
+
+        <Button
+            android:id="@+id/btn6"
+            style="@style/BtnCommon"
+            android:text="6、OkhttpActivity"
+            />
+
+        <Button
+            android:id="@+id/btn7"
+            style="@style/BtnCommon"
+            android:text="7、PerActivity(动态权限,悬浮窗权限)"
+            />
+
+        <Button
+            android:id="@+id/btn8"
+            style="@style/BtnCommon"
+            android:text="8、ToolBarActivity"
+            />
+
+
+        <Button
+            android:id="@+id/btn9"
+            style="@style/BtnCommon"
+            android:text="9、RxAndroidActivity"
+            />
+
+        <Button
+            android:id="@+id/btn10"
+            style="@style/BtnCommon"
+            android:text="10、ToastActivity"
+            />
+
+        <Button
+            android:id="@+id/btn11"
+            style="@style/BtnCommon"
+            android:text="11、WeiXinActivity"
+            />
+
+        <Button
+            android:id="@+id/btn19"
+            style="@style/BtnCommon"
+            android:text="19、地图和定位"
+            />
+
+        <Button
+            android:id="@+id/btn20"
+            style="@style/BtnCommon"
+            android:text="20、CheckPermissionsActivity"
+            />
+
+        <Button
+            android:id="@+id/btn21"
+            style="@style/BtnCommon"
+            android:text="21、GetUriParameterActivity"
+            />
+
+        <Button
+            android:id="@+id/btn22"
+            style="@style/BtnCommon"
+            android:text="22、InterfaceTestActivity(接口)"
+            />
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/btn34"
+            style="@style/BtnCommon"
+            android:text="34、"
+            />
+
+        <Button
+            android:id="@+id/btn35"
+            style="@style/BtnCommon"
+            android:text="35、"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>

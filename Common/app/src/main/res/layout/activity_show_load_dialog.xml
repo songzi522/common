@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_show_load_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gs.common.activity.ShowLoadDialogActivity"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/btn1"
+        style="@style/BtnCommon2"
+        android:text="显示图片加载框一"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        style="@style/BtnCommon2"
+        android:text="显示图片加载框二"
+        />
+
+    <Button
+        android:id="@+id/btn3"
+        style="@style/BtnCommon2"
+        android:text="显示动画加载框一"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/x20"
+        android:src="@drawable/loading_large"
+        android:layout_gravity="center_horizontal"
+        />
+
+
+
+</LinearLayout>

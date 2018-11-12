@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wei_xin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gs.common.activity.WeiXinActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn10"
+        style="@style/BtnCommon"
+        android:text="扫一扫登陆"
+        />
+
+    <Button
+        android:id="@+id/btn11"
+        style="@style/BtnCommon"
+        android:text="分享"
+        />
+
+</LinearLayout>

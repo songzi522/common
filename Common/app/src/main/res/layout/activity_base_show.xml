@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_base_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gs.common.activity.BaseShowActivity"
+    android:orientation="vertical"
+    >
+
+    <Button
+        android:id="@+id/btn1"
+        style="@style/BtnCommon2"
+        android:text="BaseShowTest1Activity"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        style="@style/BtnCommon2"
+        android:text="BaseShowTest2Activity"
+        />
+
+    <Button
+        android:id="@+id/btn3"
+        style="@style/BtnCommon2"
+        android:text="BaseShowTest3Activity"
+        />
+
+    <Button
+        android:id="@+id/btn4"
+        style="@style/BtnCommon2"
+        android:text="BaseShowTest4Activity"
+        />
+
+    <Button
+        android:id="@+id/btn5"
+        style="@style/BtnCommon2"
+        android:text="BaseShowTest5Activity"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rv_add_item_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:gravity="center"
+        android:text="添加item" />
+
+    <TextView
+        android:id="@+id/rv_del_item_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y50"
+        android:background="@android:color/darker_gray"
+        android:gravity="center"
+        android:text="删除item" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true" />
+</LinearLayout>

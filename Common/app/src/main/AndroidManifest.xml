@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gs.common">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入缓存定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" /> -->
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/keji001"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 高德地图  ========= start ============== -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="d9ab98834420d9dfe9d975852e9ee100" />
+
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- 高德地图 ========= end ============== -->
+
+
+        <!-- Service ========= start ============== -->
+        <service android:name=".service.SimpleService" />
+        <service android:name=".service.LocalService" />
+        <!-- Service ========= end ============== -->
+
+
+        <!-- receiver ========= start ============== -->
+        <!--
+        android:exported 是Android中的四大组件 Activity，Service，Provider，Receiver 四大组件中都会有的一个属性。
+        总体来说它的主要作用是：是否支持其它应用调用当前组件。
+        默认值：如果包含有intent-filter 默认值为true; 没有intent-filter默认值为false。 ==============
+        -->
+
+        <receiver
+            android:name=".broadcast.JingTaiBroadcast"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.gs.send" />
+            </intent-filter>
+        </receiver>
+        <!-- receiver ========= end ============== -->
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.gs.common.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.DialogActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ThreadActivity" />
+        <activity android:name=".animation.AnimationActivity" />
+        <activity android:name=".activity.UniqueIdActivity" />
+        <activity
+            android:name=".activity.ToastDialogActivity"
+            android:theme="@style/DialogActivity" />
+        <activity android:name=".activity.QRCodeActivity" />
+        <activity android:name=".activity.GlideActivity" />
+        <activity android:name=".activity.OkhttpActivity" />
+        <activity android:name=".activity.PerActivity" />
+        <activity android:name=".activity.ToolBarActivity" />
+        <activity android:name=".activity.rx_android.RxAndroidActivity" />
+        <activity android:name=".activity.rx_android.RxTest1Activity" />
+        <activity android:name=".activity.ToastActivity" />
+        <activity android:name=".activity.WeiXinActivity" />
+        <activity android:name=".activity.ListViewActivity" />
+        <activity android:name=".activity.LV2Activity" />
+        <activity android:name=".activity.PercentFrameLayoutAty" />
+        <activity android:name=".activity.PercentFrameLayoutAty1" />
+        <activity android:name=".activity.PercentRelativeLayoutAty" />
+        <activity
+            android:name=".activity.ShowWebViewByDialogAty"
+            android:theme="@style/dialogStyle" />
+        <activity android:name=".activity.RvActivity" />
+        <activity android:name=".activity.RvTest1Activity" />
+        <activity android:name=".activity.RvTest2Activity" />
+        <activity android:name=".activity.EventBusActivity" />
+        <activity android:name=".activity.EventBusTest1Activity" />
+        <activity android:name=".activity.EventBusTest2Activity" />
+        <activity android:name=".activity.count_timer.CountTimerActivity" />
+        <activity android:name=".activity.count_timer.CountTimerTest1Activity" />
+        <activity android:name=".activity.count_timer.CountTimerTest2Activity" />
+        <activity android:name=".activity.count_timer.CountTimerTest3Activity" />
+        <activity android:name=".activity.base.Base1Activity" />
+        <activity android:name=".activity.BaseShowActivity" />
+        <activity android:name=".activity.BaseShowTest1Activity" />
+        <activity android:name=".activity.ShowLoadDialogActivity" />
+        <activity android:name=".activity.GaoDeMapActivity" />
+        <activity android:name=".activity.CheckPermissionsActivity" />
+        <activity android:name=".activity.GetLocationActivity" />
+        <activity android:name=".activity.MapAndLocationActivity" />
+        <activity android:name=".activity.GetLocation2Activity" />
+        <activity android:name=".activity.GetLocation3Activity" />
+        <activity android:name=".activity.GetUriParameterActivity" />
+        <activity android:name=".activity.post_data.PostDataActivity" />
+        <activity android:name=".activity.EventBusTest3Activity" />
+        <activity android:name=".interfacetest2.InterfaceTestActivity" />
+        <activity android:name=".interfacetest2.InterfaceTest1Activity" />
+        <activity android:name=".interfacetest2.InterfaceTest2Activity" />
+        <activity android:name=".activity.rx_android.RxTest2Activity" />
+        <activity android:name=".activity.test.TestActivity" />
+        <activity android:name=".activity.test.Test1Activity" />
+        <activity android:name=".activity.base.BaseReadyGoActivity" />
+        <activity android:name=".activity.lifeCycle.LifeCycleActivity" />
+        <activity android:name=".activity.lifeCycle.LifeCycleTest1Activity" />
+        <activity android:name=".service.ServiceTestActivity" />
+        <activity android:name=".service.ServiceTest1Activity" />
+        <activity android:name=".activity.test.Test2Activity" />
+        <activity android:name=".activity.test.Test3Activity" />
+        <activity android:name=".activity.test.Test4Activity" />
+        <activity android:name=".service.ServiceBindTest2Activity" />
+        <activity android:name=".fragments.FragmentTestActivity" />
+        <activity android:name=".fragments.FragmentTest1Activity" />
+        <activity android:name=".fragments.FragmentTest2Activity" />
+        <activity android:name=".animation.AnimationTest1Activity" />
+        <activity android:name=".dispatchTouchEvent.DispatchTouchEventActivity" />
+        <activity android:name=".dispatchTouchEvent.DispatchTouchEventTest1Activity" />
+        <activity android:name=".interfacetest2.InterfaceTest3Activity" />
+        <activity android:name=".activity.post_data.StartAtyForResActivity" />
+        <activity android:name=".activity.post_data.StartAtyForResTest1Activity" />
+        <activity android:name=".activity.post_data.StartAtyForResTest2Activity" />
+        <activity android:name=".broadcast.BroadCastActivity" />
+        <activity android:name=".broadcast.BroadCastTest1Activity" />
+        <activity android:name=".broadcast.BroadCastTest2Activity" />
+        <activity android:name=".activity.count_timer.CountTimerTest4Activity" />
+        <activity android:name=".activity.HorizontalCenterActivity" />
+        <activity android:name=".activity.PictureTest2Activity" />
+        <activity android:name=".activity.PictureTest3Activity" />
+        <activity android:name=".activity.PictureTest4Activity"></activity>
+    </application>
+
+</manifest>

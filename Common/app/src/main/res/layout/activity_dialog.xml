@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gs.common.activity.DialogActivity"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn1"
+        style="@style/BtnCommon"
+        android:text="1、系统提示对话框（AlertDialog）的使用"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        style="@style/BtnCommon"
+        android:text="2、系统普通提示框（只有标题和内容）"
+        />
+
+    <Button
+        android:id="@+id/btn3"
+        style="@style/BtnCommon"
+        android:text="3、自定义弹出框（只有标题和内容）"
+        />
+
+    <Button
+        android:id="@+id/btn4"
+        style="@style/BtnCommon"
+        android:text="4、自定义弹出框（标题、内容和确定按钮）"
+        />
+
+    <Button
+        android:id="@+id/btn5"
+        style="@style/BtnCommon"
+        android:text="5、自定义弹出框（单项框）"
+        />
+
+    <Button
+        android:id="@+id/btn6"
+        style="@style/BtnCommon"
+        android:text="6、自定义弹出框（底部支付框）"
+        />
+
+    <Button
+        android:id="@+id/btn7"
+        style="@style/BtnCommon"
+        android:text="7、自定义弹出框（单按钮、双按钮、无按钮）"
+        />
+
+    <Button
+        android:id="@+id/btn8"
+        style="@style/BtnCommon"
+        android:text="8、Activity以弹窗展示（显示weibview弹窗）"
+        />
+
+    <Button
+        android:id="@+id/btn9"
+        style="@style/BtnCommon"
+        android:text="9、自定义弹出框（）"
+        />
+
+    <Button
+        android:id="@+id/btn10"
+        style="@style/BtnCommon"
+        android:text="10、自定义弹出框（）"
+        />
+
+
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gs.common.activity.count_timer.CountTimerTest1Activity"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/tvTimer1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:gravity="center"
+        android:hint="tvTimer1"
+        android:textSize="@dimen/x10"
+        />
+
+    <Button
+        android:id="@+id/btn1"
+        style="@style/BtnCommon2"
+        android:text="Click1"
+        />
+
+    <TextView
+        android:id="@+id/tvTimer2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:gravity="center"
+        android:hint="tvTimer2"
+        android:textSize="@dimen/x10"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        style="@style/BtnCommon2"
+        android:text="Click2"
+        />
+
+    <TextView
+        android:id="@+id/tvTimer3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:gravity="center"
+        android:hint="tvTimer3"
+        android:textSize="@dimen/x10"
+        />
+
+    <Button
+        android:id="@+id/btn3"
+        style="@style/BtnCommon2"
+        android:text="Click3"
+        />
+
+    <TextView
+        android:id="@+id/tvTimer4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:gravity="center"
+        android:hint="tvTimer4"
+        android:textSize="@dimen/x10"
+        />
+
+    <Button
+        android:id="@+id/btn4"
+        style="@style/BtnCommon2"
+        android:text="Click4"
+        />
+
+</LinearLayout>

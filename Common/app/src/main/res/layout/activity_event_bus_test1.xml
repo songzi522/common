@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gs.common.activity.EventBusTest1Activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y30"
+        android:text="EventBusTest1Activity"
+        android:textSize="@dimen/x20"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btnMessage"
+        style="@style/BtnCommon2"
+        android:text="跳转到EventBusTest2Activity"
+        />
+
+    <Button
+        android:id="@+id/btnMessage2"
+        style="@style/BtnCommon2"
+        android:text="跳转到EventBusTest3Activity"
+        />
+
+    <Button
+        android:id="@+id/btnubscription"
+        style="@style/BtnCommon2"
+        android:text="订阅事件"
+        />
+
+</LinearLayout>
